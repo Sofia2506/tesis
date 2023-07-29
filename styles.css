@@ -1,0 +1,65 @@
+@font-face {
+    font-family:"BebasNeue";
+    src: url('../fonts/BebasNeue-Regular.ttf')
+}
+@font-face {
+    font-family:"PoiretOne";
+    src: url('../fonts/PoiretOne.ttf')
+}
+
+.form__titulo{
+    font-size: 32px;
+    font-family: "BebasNeue";
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form__label{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.form__input{
+    width: 90%;
+    outline: none;
+    padding: 10px 15px;
+    overflow-y: hidden;
+}
+.input--texto{
+    height: 80px;    
+}
+.input--pregunta{
+    height: 30px;
+}
+.input--titulo{
+    height: 20px;
+}
+.input--option{
+    width: 50%;
+    border: none;
+    height: 10px;
+    padding-left: 5px;
+    border-bottom: 1px black;
+}
+.button{
+    border-radius: 15px;
+    padding: 10px 15px;
+    outline: none;
+}
+.botones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2. 1fr);
+    width: 100%;
+}
+.but--pregunta{
+    grid-row: 1;
+    grid-column: 3;
+    width: 50%;
+    justify-self: end;
+}
+.but--submit{
+    grid-row: 2;
+    grid-column: 2;
+}

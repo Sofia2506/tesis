@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo control de lectura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="form__titulo">Nuevo control de lectura</h1>
+    <form class="form">
+        <label class="form__label">Título de la lectura:</label>
+        <input type="text" class="form__input input--titulo">
+        <label class="form__label">Sube el texto de la lectura:</label>
+        <input type="textarea" class="form__input input--texto">
+        <label class="form__label">Sube todas las preguntas que desees, luego podrás configurar cuántas 
+            preguntas quieres que se muestren, cuáles y si deseas que sean aleatorias</label>
+        <div class="form__preguntas" id="preguntas">
+            <div class="pregunta">
+                <h3>Pregunta 01:</h3>
+                <input type="text" placeholder="Ingresa una pregunta" class="form__input input--pregunta">
+                <div class="opciones">
+                    <ol type="a" id="opciones">
+                        <li><input type="text" placeholder="Ingrese opción 1" class="form__input input--option"></li>
+                    </ol>
+                </div>
+                <input type="button" value="+ Añadir opción" class="button" onclick="newOption()">
+            </div>
+        </div>
+        <div class="botones">
+            <input type="button" value="+ Añadir pregunta" class="button but--pregunta" onclick="newQuestion()">
+            <input type="submit" value="Crear control" class="button but--submit">
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
